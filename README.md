@@ -1,39 +1,101 @@
-# Python CustomTkinter Snippets
+# CustomTkinter Snippets
 
-Welcome to the Python CustomTkinter Snippets repository! This repository contains a curated collection of Python CustomTkinter code snippets to help you build interactive graphical user interfaces (GUIs) effortlessly.
+![CustomTkinter Snippets Banner](images/customtkinter_snippets_banner.png)
 
-## About CustomTkinter
+CustomTkinter Snippets is a Visual Studio Code extension that provides a comprehensive set of snippets for efficiently working with CustomTkinter, a custom toolkit for Python GUI development. This extension enhances your development workflow by offering quick access to commonly used CustomTkinter components and features directly within the VS Code editor.
 
-CustomTkinter is a custom version of the standard Tkinter GUI library for Python developed by [Tom Schimansky](https://github.com/TomSchimansky). You can find the CustomTkinter repository [here](https://github.com/TomSchimansky/CustomTkinter). It provides a fast and easy way to create GUI applications. With CustomTkinter, you can create windows, labels, buttons, menus, and much more to build powerful desktop applications.
+## Features
 
-## Repository Structure
+- **Efficient Workflow**: Speed up your development process with easy-to-use snippets for creating CustomTkinter widgets and implementing various functionalities.
 
-The repository is organized into folders based on different aspects of CustomTkinter functionality. Each folder contains code snippets focusing on a specific feature or task. Here's a brief overview of the repository structure:
+- **Comprehensive Coverage**: Access snippets for a wide range of CustomTkinter components, including buttons, checkboxes, combo boxes, entry fields, frames, labels, option menus, progress bars, radio buttons, scrollable frames, segmented buttons, sliders, switches, tab views, textboxes, scrollbars, windows, images, fonts, top-level windows, input dialogs, and more.
 
-- `layout`: Snippets related to arranging widgets within a CustomTkinter window.
-- `events`: Snippets demonstrating event handling in CustomTkinter.
-- `widgets`: Snippets showcasing various CustomTkinter widgets such as buttons, labels, entry fields, etc.
-- `dialogs`: Snippets for creating dialog boxes and pop-up windows.
-- `styling`: Snippets illustrating how to customize the appearance of CustomTkinter widgets using styles and themes.
-- `examples`: Complete examples demonstrating the integration of multiple CustomTkinter components to create functional GUI applications.
+- **Customization Options**: Utilize snippets to set appearance modes, themes, widget scaling, window scaling, and automatic DPI awareness according to your application requirements.
 
-## How to Use
+## Installation
 
-Each snippet is self-contained and focused on a specific aspect of CustomTkinter. Simply browse through the folders to find the snippet that meets your requirements. Each snippet includes comments explaining its purpose and usage. You can copy and paste the code into your own Python scripts or projects.
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the square icon in the Sidebar or pressing `Ctrl+Shift+X`.
+3. Search for "CustomTkinter Snippets".
+4. Click on the Install button.
 
-## Contribution
+## Usage
 
-Contributions to this repository are highly encouraged! If you have any useful CustomTkinter snippets that you would like to share with the community, please follow the [contribution guidelines](CONTRIBUTING.md) to contribute your snippets. Together, we can make this repository a valuable resource for CustomTkinter developers.
+1. Open a Python file in Visual Studio Code.
+2. Type the snippet prefix (e.g., `ctkbutton` for a button widget) and press `Tab` to insert the snippet code.
+3. Customize the snippet code as needed for your application.
 
-## Code of Conduct
+## Example
 
-Please note that by contributing to this repository, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). We expect all contributors to uphold the principles of respect and inclusivity.
+![CustomTkinter Snippets Example GIF](images/customtkinter_snippets_example_gif.gif)
+
+## Snippets
+
+### Widgets
+
+| Prefix               | Snippet Description                                                              |
+| -------------------- | -------------------------------------------------------------------------------- |
+| `ctkwindow`          | Inserts a snippet to create base CustomTkinter window                            |
+| `ctkbutton`          | Inserts a snippet for button widget                                              |
+| `ctkcheckbox`        | Inserts a snippet for checkbox widget                                            |
+| `ctkcombobox`        | Inserts a snippet for combo box widget                                           |
+| `ctkentry`           | Inserts a snippet for entry field widget                                         |
+| `ctkframe`           | Inserts a snippet for frame widget                                               |
+| `ctklabel`           | Inserts a snippet for label widget                                               |
+| `ctkoptionmenu`      | Inserts a snippet for option menu widget                                         |
+| `ctkprogressbar`     | Inserts a snippet for progress bar widget                                        |
+| `ctkradiobutton`     | Inserts a snippet for radio button widget                                        |
+| `ctkscrollableframe` | Inserts a snippet for scrollable frame widget                                    |
+| `ctksegmentedbutton` | Inserts a snippet for segmented button widget                                    |
+| `ctkslider`          | Inserts a snippet for slider widget                                              |
+| `ctkswitch`          | Inserts a snippet for switch widget                                              |
+| `ctktabview`         | Inserts a snippet for tab view widget                                            |
+| `ctktextbox`         | Inserts a snippet for textbox widget                                             |
+| `ctkscrollbar`       | Inserts a snippet for scrollbar widget                                           |
+| `ctkimage`           | Inserts a snippet for importing images using [Pillow](https://python-pillow.org) |
+| `ctkfont`            | Inserts a snippet for importing external font families                           |
+| `ctktoplevel`        | Inserts a snippet to create secondary top-level CustomTkinter window             |
+| `ctkinputdialog`     | Inserts a snippet for input dialog widget                                        |
+
+### Appearance and Theme
+
+| Prefix          | Snippet Description                             |
+| --------------- | ----------------------------------------------- |
+| `appsys`        | Inserts a snippet for copying System Appearance |
+| `appdark`       | Inserts a snippet for setting Dark Appearance   |
+| `applight`      | Inserts a snippet for setting Light Appearance  |
+| `themegreen`    | Inserts a snippet for setting Green Theme       |
+| `themeblue`     | Inserts a snippet for setting Blue Theme        |
+| `themedarkblue` | Inserts a snippet for setting Dark Blue Theme   |
+| `theme`         | Inserts a snippet for setting Custom Theme      |
+
+### Scaling and DPI
+
+| Prefix          | Snippet Description                              |
+| --------------- | ------------------------------------------------ |
+| `scalingwidget` | Inserts a snippet for setting Widget Scaling     |
+| `scalingwindow` | Inserts a snippet for setting Window Scaling     |
+| `dpideactivate` | Inserts a snippet that deactivates DPI Awareness |
+
+## Requirements
+
+- Visual Studio Code
+- Python
+- CustomTkinter library
+
+## CustomTkinter Library
+
+CustomTkinter Snippets is built to complement the CustomTkinter library for Python GUI development. This library is maintained by [Tom Schimansky](https://github.com/TomSchimansky), a prolific developer in the Python community.
+
+- **Author Profile**: [Tom Schimansky](https://github.com/TomSchimansky)
+- **CustomTkinter Repository**: [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+
+Feel free to explore the CustomTkinter repository for more information, updates, and contributions.
+
+## Feedback
+
+For any issues, suggestions, or feedback, please [open an issue](https://github.com/AshhadDevLab/CustomTkinter-Snippets/issues) on GitHub.
 
 ## License
 
-This repository is licensed under the [BSD 3-Clause License](LICENSE). Feel free to use the code snippets in your own projects.
-
-## Get Started
-
-Explore the folders and start building amazing GUI applications with Python CustomTkinter!
-
+This extension is licensed under the [BSD-3 License](LICENSE).
