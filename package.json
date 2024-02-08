@@ -1,8 +1,10 @@
 {
   "name": "customtkinter-snippets",
   "displayName": "CustomTkinter Snippets",
-  "description": "A curated collection of Python CustomTkinter snippets for building interactive GUI applications effortlessly.",
-  "version": "1.0.0",
+  
+  "description": "A curated collection of Python customtkinter snippets for building interactive GUI applications effortlessly.",
+  "version": "2.0.0",
+  
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -23,13 +25,13 @@
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/customtkinter-snippets.code-snippets"
-      },
-      {
-        "language": "typescript",
+        "language": "python",
         "path": "./snippets/customtkinter-snippets.code-snippets"
       }
     ]
-  }
+  },
+  "files": [
+    "README.md",
+    "snippets/**/*.json"
+  ]
 }
