@@ -2,7 +2,20 @@
   "name": "customtkinter-snippets",
   "displayName": "CustomTkinter-Snippets",
   "description": "A curated collection of Python customtkinter snippets for building interactive GUI applications effortlessly.",
-  "version": "3.0.0",
+  "version": "4.0.0",
+  "keywords": [
+    "python",
+    "gui",
+    "customtkinter",
+    "tkinter",
+    "custom",
+    "design",
+    "ui",
+    "framework",
+    "snippets",
+    "visual studio code",
+    "snippet"
+  ],
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -13,7 +26,7 @@
   ],
   "license": "https://github.com/AshhadDevLab/CustomTkinter-Snippets/blob/main/LICENSE",
   "galleryBanner": {
-    "color": "#029CFF",
+    "color": "#33383F",
     "theme": "dark"
   },
   "publisher": "AshhadDevLab",
