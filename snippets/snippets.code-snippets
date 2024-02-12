@@ -5,7 +5,30 @@
       "def button_event():",
       "    print('button pressed')",
       "",
-      "button = customtkinter.CTkButton(app, text='CTkButton', command=button_event)"
+      "${1: button} = customtkinter.CTkButton(app, text='CTkButton', width=140, height=28)"
+      "${1: button}.place(x=10, y=10)"
+    ],
+    "description": "Inserts a button widget snippet"
+  },
+  "CTkButton from the customtkinter module": {
+    "prefix": "ctkbutton.grid",
+    "body": [
+      "def button_event():",
+      "    print('button pressed')",
+      "",
+      "${1: button} = customtkinter.CTkButton(app, text='CTkButton', width=140, height=28)"
+      "${1: button}.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a button widget snippet"
+  },
+  "CTkButton from the customtkinter module": {
+    "prefix": "ctkbutton.pack",
+    "body": [
+      "def button_event():",
+      "    print('button pressed')",
+      "",
+      "${1: button} = customtkinter.CTkButton(app, text='CTkButton', width=140, height=28)"
+      "${1: button}.pack()"
     ],
     "description": "Inserts a button widget snippet"
   },
@@ -17,7 +40,39 @@
       "",
       "check_var = customtkinter.StringVar(value='on')",
       "checkbox = customtkinter.CTkCheckBox(app, text='CTkCheckBox', command=checkbox_event,",
+      "                                     width=100, height=24, checkbox_width=24, checkbox_height=24,",
       "                                     variable=check_var, onvalue='on', offvalue='off')"
+      "checkbox.place(x=10, y=10)"
+    ],
+    "description": "Inserts a checkbox widget snippet"
+  },
+  
+  "CTkCheckBox from the customtkinter module": {
+    "prefix": "ctkcheckbox.grid",
+    "body": [
+      "def checkbox_event():",
+      "    print('checkbox toggled, current value:', check_var.get())",
+      "",
+      "check_var = customtkinter.StringVar(value='on')",
+      "checkbox = customtkinter.CTkCheckBox(app, text='CTkCheckBox', command=checkbox_event,",
+      "                                     width=100, height=24, checkbox_width=24, checkbox_height=24,",
+      "                                     variable=check_var, onvalue='on', offvalue='off')"
+      "checkbox.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a checkbox widget snippet"
+  },
+  
+  "CTkCheckBox from the customtkinter module": {
+    "prefix": "ctkcheckbox.pack",
+    "body": [
+      "def checkbox_event():",
+      "    print('checkbox toggled, current value:', check_var.get())",
+      "",
+      "check_var = customtkinter.StringVar(value='on')",
+      "checkbox = customtkinter.CTkCheckBox(app, text='CTkCheckBox', command=checkbox_event,",
+      "                                     width=100, height=24, checkbox_width=24, checkbox_height=24,",
+      "                                     variable=check_var, onvalue='on', offvalue='off')"
+      "checkbox.pack()"
     ],
     "description": "Inserts a checkbox widget snippet"
   },
@@ -29,29 +84,112 @@
       "",
       "combobox_var = customtkinter.StringVar(value='option 2')",
       "combobox = customtkinter.CTkComboBox(app, values=['option 1', 'option 2'],",
+      "                                     width=140, height=28",
       "                                     command=combobox_callback, variable=combobox_var)",
-      "combobox_var.set('option 2')"
+      "combobox_var.set('option 2')",
+      "combobox.place(x=10, y=10)"
+    ],
+    "description": "Inserts a combo box widget snippet"
+  },
+  "CTkComboBox from the customtkinter module": {
+    "prefix": "ctkcombobox.grid",
+    "body": [
+      "def combobox_callback(choice):",
+      "    print('combobox dropdown clicked:', choice)",
+      "",
+      "combobox_var = customtkinter.StringVar(value='option 2')",
+      "combobox = customtkinter.CTkComboBox(app, values=['option 1', 'option 2'],",
+      "                                     width=140, height=28",
+      "                                     command=combobox_callback, variable=combobox_var)",
+      "combobox_var.set('option 2')",
+      "combobox.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a combo box widget snippet"
+  },
+  "CTkComboBox from the customtkinter module": {
+    "prefix": "ctkcombobox",
+    "body": [
+      "def combobox_callback(choice):",
+      "    print('combobox dropdown clicked:', choice)",
+      "",
+      "combobox_var = customtkinter.StringVar(value='option 2')",
+      "combobox = customtkinter.CTkComboBox(app, values=['option 1', 'option 2'],",
+      "                                     width=140, height=28",
+      "                                     command=combobox_callback, variable=combobox_var)",
+      "combobox_var.set('option 2')",
+      "combobox.pack()"
     ],
     "description": "Inserts a combo box widget snippet"
   },
   "CTkEntry from the customtkinter module": {
     "prefix": "ctkentry",
     "body": [
-      "entry = customtkinter.CTkEntry(app, placeholder_text='CTkEntry')"
+      "entry = customtkinter.CTkEntry(app, placeholder_text='CTkEntry', width=140, height=28)",
+      "entry.place(x=10, y=10)"
     ],
     "description": "Inserts an entry field widget snippet"
   },
-  "CTkFrane from the customtkinter module": {
+  "CTkEntry from the customtkinter module": {
+    "prefix": "ctkentry.grid",
+    "body": [
+      "entry = customtkinter.CTkEntry(app, placeholder_text='CTkEntry', width=140, height=28)",
+      "entry.grid(column=0, row=0)"
+    ],
+    "description": "Inserts an entry field widget snippet"
+  },
+  "CTkEntry from the customtkinter module": {
+    "prefix": "ctkentry.pack",
+    "body": [
+      "entry = customtkinter.CTkEntry(app, placeholder_text='CTkEntry', width=140, height=28)",
+      "entry.pack()"
+    ],
+    "description": "Inserts an entry field widget snippet"
+  },
+  "CTkFrame from the customtkinter module": {
     "prefix": "ctkframe",
     "body": [
-      "frame = customtkinter.CTkFrame(master=root_tk, width=200, height=200)"
+      "frame = customtkinter.CTkFrame(app, width=200, height=200)",
+      "frame.place(x=10, y=10)"
+    ],
+    "description": "Inserts a frame widget snippet"
+  },
+  "CTkFrame from the customtkinter module": {
+    "prefix": "ctkframe.grid",
+    "body": [
+      "frame = customtkinter.CTkFrame(app, width=200, height=200)",
+      "frame.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a frame widget snippet"
+  },
+  "CTkFrame from the customtkinter module": {
+    "prefix": "ctkframe.pack",
+    "body": [
+      "frame = customtkinter.CTkFrame(app, width=200, height=200)",
+      "frame.pack()"
     ],
     "description": "Inserts a frame widget snippet"
   },
   "CTkLabel from the customtkinter module": {
     "prefix": "ctklabel",
     "body": [
-      "label = customtkinter.CTkLabel(app, text='CTkLabel', fg_color='transparent')"
+      "label = customtkinter.CTkLabel(app, text='CTkLabel', width=40, height=28, fg_color='transparent')",
+      "label.place(x=10, y=10)"
+    ],
+    "description": "Inserts a label widget snippet"
+  },
+  "CTkLabel from the customtkinter module": {
+    "prefix": "ctklabel.grid",
+    "body": [
+      "label = customtkinter.CTkLabel(app, text='CTkLabel', width=40, height=28, fg_color='transparent')",
+      "label.grid(column=0 ,row=0)"
+    ],
+    "description": "Inserts a label widget snippet"
+  },
+  "CTkLabel from the customtkinter module": {
+    "prefix": "ctklabel.pack",
+    "body": [
+      "label = customtkinter.CTkLabel(app, text='CTkLabel', width=40, height=28, fg_color='transparent')",
+      "label.pack()"
     ],
     "description": "Inserts a label widget snippet"
   },
@@ -63,15 +201,64 @@
       "",
       "optionmenu_var = customtkinter.StringVar(value='option 2')",
       "optionmenu = customtkinter.CTkOptionMenu(app,values=['option 1', 'option 2'],",
+      "                                         width=140, height=28",
       "                                         command=optionmenu_callback,",
-      "                                         variable=optionmenu_var)"
+      "                                         variable=optionmenu_var)",
+      "optionmenu.place(x=10, y=10)"
+    ],
+    "description": "Inserts an option menu widget snippet"
+  },
+  "CTkOptionMenu from the customtkinter module": {
+    "prefix": "ctkoptionmenu.grid",
+    "body": [
+      "def optionmenu_callback(choice):",
+      "    print('optionmenu dropdown clicked:', choice)",
+      "",
+      "optionmenu_var = customtkinter.StringVar(value='option 2')",
+      "optionmenu = customtkinter.CTkOptionMenu(app,values=['option 1', 'option 2'],",
+      "                                         width=140, height=28",
+      "                                         command=optionmenu_callback,",
+      "                                         variable=optionmenu_var)",
+      "optionmenu.grid(column=0, row=0)"
+    ],
+    "description": "Inserts an option menu widget snippet"
+  },
+  "CTkOptionMenu from the customtkinter module": {
+    "prefix": "ctkoptionmenu.pack",
+    "body": [
+      "def optionmenu_callback(choice):",
+      "    print('optionmenu dropdown clicked:', choice)",
+      "",
+      "optionmenu_var = customtkinter.StringVar(value='option 2')",
+      "optionmenu = customtkinter.CTkOptionMenu(app,values=['option 1', 'option 2'],",
+      "                                         width=140, height=28",
+      "                                         command=optionmenu_callback,",
+      "                                         variable=optionmenu_var)",
+      "optionmenu.pack()"
     ],
     "description": "Inserts an option menu widget snippet"
   },
   "CTkProgressBar from the customtkinter module": {
     "prefix": "ctkprogressbar",
     "body": [
-      "progressbar = customtkinter.CTkProgressBar(app, orientation='horizontal')"
+      "progressbar = customtkinter.CTkProgressBar(app, orientation='horizontal')",
+      "progressbar.place(x=10, y=10)"
+    ],
+    "description": "Inserts a progress bar widget snippet"
+  },
+  "CTkProgressBar from the customtkinter module": {
+    "prefix": "ctkprogressbar.grid",
+    "body": [
+      "progressbar = customtkinter.CTkProgressBar(app, orientation='horizontal')",
+      "progressbar.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a progress bar widget snippet"
+  },
+  "CTkProgressBar from the customtkinter module": {
+    "prefix": "ctkprogressbar.pack",
+    "body": [
+      "progressbar = customtkinter.CTkProgressBar(app, orientation='horizontal')",
+      "progressbar.pack()"
     ],
     "description": "Inserts a progress bar widget snippet"
   },
@@ -82,17 +269,68 @@
       "    print('radiobutton toggled, current value:', radio_var.get())",
       "",
       "radio_var = tkinter.IntVar(value=0)",
-      "radiobutton_1 = customtkinter.CTkRadioButton(app, text='CTkRadioButton 1',",
+      "radiobutton= customtkinter.CTkRadioButton(app, text='CTkRadioButton 1',",
+      "                                             width=100 , height=22 , radiobutton_width=22, radiobutton_height=22",
       "                                             command=radiobutton_event, variable= radio_var, value=1)",
-      "radiobutton_2 = customtkinter.CTkRadioButton(app, text='CTkRadioButton 2',",
-      "                                             command=radiobutton_event, variable= radio_var, value=2)"
+      "",
+      "radiobutton.place(x=10, y=10)"
+    ],
+    "description": "Inserts a radio button widget snippet"
+  },
+  "CTkRadioButton from the customtkinter module": {
+    "prefix": "ctkradiobutton.grid",
+    "body": [
+      "def radiobutton_event():",
+      "    print('radiobutton toggled, current value:', radio_var.get())",
+      "",
+      "radio_var = tkinter.IntVar(value=0)",
+      "radiobutton= customtkinter.CTkRadioButton(app, text='CTkRadioButton 1',",
+      "                                             width=100 , height=22 , radiobutton_width=22, radiobutton_height=22",
+      "                                             command=radiobutton_event, variable= radio_var, value=1)",
+      "",
+      "radiobutton.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a radio button widget snippet"
+  },
+  "CTkRadioButton from the customtkinter module": {
+    "prefix": "ctkradiobutton.pack",
+    "body": [
+      "def radiobutton_event():",
+      "    print('radiobutton toggled, current value:', radio_var.get())",
+      "",
+      "radio_var = tkinter.IntVar(value=0)",
+      "radiobutton= customtkinter.CTkRadioButton(app, text='CTkRadioButton 1',",
+      "                                             width=100 , height=22 , radiobutton_width=22, radiobutton_height=22",
+      "                                             command=radiobutton_event, variable= radio_var, value=1)",
+      "",
+      "radiobutton.pack()"
     ],
     "description": "Inserts a radio button widget snippet"
   },
   "CTkScrollableFrame from the customtkinter module": {
     "prefix": "ctkscrollableframe",
     "body": [
-      "scrollable_frame = customtkinter.CTkScrollableFrame(app, width=200, height=200)"
+      "scrollable_frame = customtkinter.CTkScrollableFrame(app, width=200, height=200)",
+      "",
+      "scrollable_frame.place(x=10, y=10)"
+    ],
+    "description": "Inserts a scrollable frame widget snippet"
+  },
+  "CTkScrollableFrame from the customtkinter module": {
+    "prefix": "ctkscrollableframe.grid",
+    "body": [
+      "scrollable_frame = customtkinter.CTkScrollableFrame(app, width=200, height=200)",
+      "",
+      "scrollable_frame.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a scrollable frame widget snippet"
+  },
+  "CTkScrollableFrame from the customtkinter module": {
+    "prefix": "ctkscrollableframe.pack",
+    "body": [
+      "scrollable_frame = customtkinter.CTkScrollableFrame(app, width=200, height=200)",
+      "",
+      "scrollable_frame.pack()"
     ],
     "description": "Inserts a scrollable frame widget snippet"
   },
@@ -104,8 +342,43 @@
       "",
       "segemented_button_var = customtkinter.StringVar(value='Value 1')",
       "segemented_button = customtkinter.CTkSegmentedButton(app, values=['Value 1', 'Value 2', 'Value 3'],",
+      "                                                     width=140, height=28",
       "                                                     command=segmented_button_callback,",
-      "                                                     variable=segemented_button_var)"
+      "                                                     variable=segemented_button_var)",
+      "",
+      "segmented_button.place(x=10, y=10)"
+    ],
+    "description": "Inserts a segmented button widget snippet"
+  },
+  "CTkSegmentedButton from the customtkinter module": {
+    "prefix": "ctksegmentedbutton.grid",
+    "body": [
+      "def segmented_button_callback(value):",
+      "    print('segmented button clicked:', value)",
+      "",
+      "segemented_button_var = customtkinter.StringVar(value='Value 1')",
+      "segemented_button = customtkinter.CTkSegmentedButton(app, values=['Value 1', 'Value 2', 'Value 3'],",
+      "                                                     width=140, height=28",
+      "                                                     command=segmented_button_callback,",
+      "                                                     variable=segemented_button_var)",
+      "",
+      "segmented_button.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a segmented button widget snippet"
+  },
+  "CTkSegmentedButton from the customtkinter module": {
+    "prefix": "ctksegmentedbutton.pack",
+    "body": [
+      "def segmented_button_callback(value):",
+      "    print('segmented button clicked:', value)",
+      "",
+      "segemented_button_var = customtkinter.StringVar(value='Value 1')",
+      "segemented_button = customtkinter.CTkSegmentedButton(app, values=['Value 1', 'Value 2', 'Value 3'],",
+      "                                                     width=140, height=28",
+      "                                                     command=segmented_button_callback,",
+      "                                                     variable=segemented_button_var)",
+      "",
+      "segmented_button.pack()"
     ],
     "description": "Inserts a segmented button widget snippet"
   },
@@ -115,7 +388,33 @@
       "def slider_event(value):",
       "    print(value)",
       "",
-      "slider = customtkinter.CTkSlider(app, from_=0, to=100, command=slider_event)"
+      "slider = customtkinter.CTkSlider(app, width=140, height=28, from_=0, to=100, command=slider_event)",
+      "",
+      "slider.place(x=10, y=10)"
+    ],
+    "description": "Inserts a slider widget snippet"
+  },
+  "CTkSlider from the customtkinter module": {
+    "prefix": "ctkslider.grid",
+    "body": [
+      "def slider_event(value):",
+      "    print(value)",
+      "",
+      "slider = customtkinter.CTkSlider(app, width=140, height=28, from_=0, to=100, command=slider_event)",
+      "",
+      "slider.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a slider widget snippet"
+  },
+  "CTkSlider from the customtkinter module": {
+    "prefix": "ctkslider.pack",
+    "body": [
+      "def slider_event(value):",
+      "    print(value)",
+      "",
+      "slider = customtkinter.CTkSlider(app, width=140, height=28, from_=0, to=100, command=slider_event)",
+      "",
+      "slider.pack()"
     ],
     "description": "Inserts a slider widget snippet"
   },
@@ -127,12 +426,75 @@
       "",
       "switch_var = customtkinter.StringVar(value='on')",
       "switch = customtkinter.CTkSwitch(app, text='CTkSwitch', command=switch_event,",
-      "                                 variable=switch_var, onvalue='on', offvalue='off')"
+      "                                 width=100, height=24, switch_width=36, switch_height=18",
+      "                                 variable=switch_var, onvalue='on', offvalue='off')",
+      "",
+      "switch.place(x=10, y=10)"
+    ],
+    "description": "Inserts a switch widget snippet"
+  },
+  "CTkSwitch from the customtkinter module": {
+    "prefix": "ctkswitch.grid",
+    "body": [
+      "def switch_event():",
+      "    print('switch toggled, current value:', switch_var.get())",
+      "",
+      "switch_var = customtkinter.StringVar(value='on')",
+      "switch = customtkinter.CTkSwitch(app, text='CTkSwitch', command=switch_event,",
+      "                                 width=100, height=24, switch_width=36, switch_height=18",
+      "                                 variable=switch_var, onvalue='on', offvalue='off')",
+      "",
+      "switch.grid(column=0, row=0)"
+    ],
+    "description": "Inserts a switch widget snippet"
+  },
+  "CTkSwitch from the customtkinter module": {
+    "prefix": "ctkswitch.pack",
+    "body": [
+      "def switch_event():",
+      "    print('switch toggled, current value:', switch_var.get())",
+      "",
+      "switch_var = customtkinter.StringVar(value='on')",
+      "switch = customtkinter.CTkSwitch(app, text='CTkSwitch', command=switch_event,",
+      "                                 width=100, height=24, switch_width=36, switch_height=18",
+      "                                 variable=switch_var, onvalue='on', offvalue='off')",
+      "",
+      "switch.pack()"
     ],
     "description": "Inserts a switch widget snippet"
   },
   "CTkTabview from the customtkinter module": {
     "prefix": "ctktabview",
+    "body": [
+      "tabview = customtkinter.CTkTabview(master=app)",
+      "tabview.place(x=10, y=10)",
+      "",
+      "tabview.add('tab 1')  # add tab at the end",
+      "tabview.add('tab 2')  # add tab at the end",
+      "tabview.set('tab 2')  # set currently visible tab",
+      "",
+      "button = customtkinter.CTkButton(master=tabview.tab('tab 1'))",
+      "button.place(x=10, y=10)"
+    ],
+    "description": "Inserts a tab view widget snippet"
+  },
+  "CTkTabview from the customtkinter module": {
+    "prefix": "ctktabview.grid",
+    "body": [
+      "tabview = customtkinter.CTkTabview(master=app)",
+      "tabview.grid(column=0, row=20)",
+      "",
+      "tabview.add('tab 1')  # add tab at the end",
+      "tabview.add('tab 2')  # add tab at the end",
+      "tabview.set('tab 2')  # set currently visible tab",
+      "",
+      "button = customtkinter.CTkButton(master=tabview.tab('tab 1'))",
+      "button.grid(column=0, row=1)"
+    ],
+    "description": "Inserts a tab view widget snippet"
+  },
+  "CTkTabview from the customtkinter module": {
+    "prefix": "ctktabview.pack",
     "body": [
       "tabview = customtkinter.CTkTabview(master=app)",
       "tabview.pack(padx=20, pady=20)",
@@ -149,7 +511,37 @@
   "CTkTextbox from the customtkinter module": {
     "prefix": "ctktextbox",
     "body": [
-      "textbox = customtkinter.CTkTextbox(app)",
+      "textbox = customtkinter.CTkTextbox(app, width=200, height=200)",
+      "",
+      "textbox.place(x=10, y=10)",
+      "",
+      "textbox.insert('0.0', 'new text to insert')  # insert at line 0 character 0",
+      "text = textbox.get('0.0', 'end')  # get text from line 0 character 0 till the end",
+      "textbox.delete('0.0', 'end')  # delete all text",
+      "textbox.configure(state='disabled')  # configure textbox to be read-only"
+    ],
+    "description": "Inserts a textbox widget snippet"
+  },
+  "CTkTextbox from the customtkinter module": {
+    "prefix": "ctktextbox.grid",
+    "body": [
+      "textbox = customtkinter.CTkTextbox(app, width=200, height=200)",
+      "",
+      "textbox.grid(column=0, row=0)",
+      "",
+      "textbox.insert('0.0', 'new text to insert')  # insert at line 0 character 0",
+      "text = textbox.get('0.0', 'end')  # get text from line 0 character 0 till the end",
+      "textbox.delete('0.0', 'end')  # delete all text",
+      "textbox.configure(state='disabled')  # configure textbox to be read-only"
+    ],
+    "description": "Inserts a textbox widget snippet"
+  },
+  "CTkTextbox from the customtkinter module": {
+    "prefix": "ctktextbox.pack",
+    "body": [
+      "textbox = customtkinter.CTkTextbox(app, width=200, height=200)",
+      "",
+      "textbox.pack()",
       "",
       "textbox.insert('0.0', 'new text to insert')  # insert at line 0 character 0",
       "text = textbox.get('0.0', 'end')  # get text from line 0 character 0 till the end",
@@ -162,11 +554,41 @@
     "prefix": "ctkscrollbar",
     "body": [
       "tk_textbox = customtkinter.CTkTextbox(app, activate_scrollbars=False)",
+      "tk_textbox.place(x=10, y=10)",
+      "",
+      "# create CTk scrollbar",
+      "ctk_textbox_scrollbar = customtkinter.CTkScrollbar(app, command=tk_textbox.yview)",
+      "ctk_textbox_scrollbar.place(x=10, y=10)",
+      "",
+      "# connect textbox scroll event to CTk scrollbar",
+      "tk_textbox.configure(yscrollcommand=ctk_textbox_scrollbar.set)"
+    ],
+    "description": "Inserts a scrollbar widget snippet"
+  },
+  "CTkScrollbar from the customtkinter module": {
+    "prefix": "ctkscrollbar.grid",
+    "body": [
+      "tk_textbox = customtkinter.CTkTextbox(app, activate_scrollbars=False)",
       "tk_textbox.grid(row=0, column=0, sticky='nsew')",
       "",
       "# create CTk scrollbar",
       "ctk_textbox_scrollbar = customtkinter.CTkScrollbar(app, command=tk_textbox.yview)",
       "ctk_textbox_scrollbar.grid(row=0, column=1, sticky='ns')",
+      "",
+      "# connect textbox scroll event to CTk scrollbar",
+      "tk_textbox.configure(yscrollcommand=ctk_textbox_scrollbar.set)"
+    ],
+    "description": "Inserts a scrollbar widget snippet"
+  },
+  "CTkScrollbar from the customtkinter module": {
+    "prefix": "ctkscrollbar.pack",
+    "body": [
+      "tk_textbox = customtkinter.CTkTextbox(app, activate_scrollbars=False)",
+      "tk_textbox.pack()",
+      "",
+      "# create CTk scrollbar",
+      "ctk_textbox_scrollbar = customtkinter.CTkScrollbar(app, command=tk_textbox.yview)",
+      "ctk_textbox_scrollbar.pack()",
       "",
       "# connect textbox scroll event to CTk scrollbar",
       "tk_textbox.configure(yscrollcommand=ctk_textbox_scrollbar.set)"
@@ -182,11 +604,6 @@
       "app.geometry('600x500')",
       "app.title('CTk example')",
       "",
-      "def button_event():",
-      "    print('button pressed')",
-      "",
-      "button = customtkinter.CTkButton(app, text='CTkButton', command=button_event)",
-      "",
       "app.mainloop()"
     ],
     "description": "Creates a base CustomTkinter window"
@@ -197,29 +614,49 @@
       "# add `from PIL import Image` on top",
       "my_image = customtkinter.CTkImage(light_image=Image.open('<path to light mode image>'),",
       "                                  dark_image=Image.open('<path to dark mode image>'),",
-      "                                  size=(30, 30))",
-      "",
-      "image_label = customtkinter.CTkLabel(app, image=my_image, text='')  # display image with a CTkLabel"
+      "                                  size=(30, 30))"
     ],
     "description": "Image"
   },
   "CTkFont from the customtkinter module": {
     "prefix": "ctkfont",
     "body": [
-      "my_font = customtkinter.CTkFont(family='<family name>', size=<size in px>, <optional keyword arguments>)"
+      "my_font = customtkinter.CTkFont(family='<family name>', size=<size in px>)"
     ],
     "description": "Font"
   },
   "CTkToplevel from the customtkinter module": {
     "prefix": "ctktoplevel",
-    "body": ["toplevel = CTkToplevel(app)  # master argument is optional  "],
+    "body": ["toplevel = customtkinter.CTkToplevel(app, width=200 ,height=200)  # master argument is optional  "],
     "description": "Inserts a top-level window widget snippet"
   },
   "CTkInputDialog from the customtkinter module": {
     "prefix": "ctkinputdialog",
     "body": [
       "dialog = customtkinter.CTkInputDialog(text='Type in a number:', title='Test')",
-      "text = dialog.get_input()"
+      "text = dialog.get_input()",
+      "",
+      "dialog.place(x=10, y=10)"
+    ],
+    "description": "Inserts an input dialog widget snippet"
+  },
+  "CTkInputDialog from the customtkinter module": {
+    "prefix": "ctkinputdialog.grid",
+    "body": [
+      "dialog = customtkinter.CTkInputDialog(text='Type in a number:', title='Test')",
+      "text = dialog.get_input()",
+      "",
+      "dialog.grid(column=0, row=0)"
+    ],
+    "description": "Inserts an input dialog widget snippet"
+  },
+  "CTkInputDialog from the customtkinter module": {
+    "prefix": "ctkinputdialog.pack",
+    "body": [
+      "dialog = customtkinter.CTkInputDialog(text='Type in a number:', title='Test')",
+      "text = dialog.get_input()",
+      "",
+      "dialog.pack()"
     ],
     "description": "Inserts an input dialog widget snippet"
   },
